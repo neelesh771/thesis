@@ -1,0 +1,39 @@
+#INSTRUCTIONS FOR THE PARENT MACHINE SETUP
+
+Steps:
+1) Create a new VM called Parent on VBox using the Parent.vdi file in the Flash Drive
+2) Check the Network settings on the VM are : Bridged Adapter with Promiscuous Mode-> Allow All
+3) Power Up the Parent VM and do the following:
+	1. > /sbin/ifconfig: note your ip address
+	2. > vim /etc/vcl/vcld.conf : change the ip address which you could see in this file to your ip address.
+	3. > /etc/init.d/vcld restart
+	4. > vim /var/www/html/vcl/.ht-inc/conf.php : Change the lines where you see old ip address with yours.
+	5. > /sbin/service httpd restart : Restart Httpd service
+	6. > tail -f /var/log/vcld.log : Check if management node has checked in.
+	7. > Login through web interface(192.168.1.50/vcl/) and see if it is working.
+			Username:admin
+			Password:adminvcl
+	8. > Start the run_parent.sh script from the /root/parent_daemon directory
+
+Parent is setup.
+
+#INSTRUCTIONS FOR THE CHILD MACHINE SETUP
+
+Steps:
+1) Create a new VM called Child on VBox using the Parent.vdi file in the Flash Drive
+2) Check the Network settings on the VM are : Bridged Adapter with Promiscuous Mode-> Allow All
+3) Create as many Full clones of the Child VM as you want. Name them Child 1, Child 2...Child N
+	Run the vmc.sh script in the flash drive to power all of them.
+4) Login into the Child using the credentials:
+	Username: root
+	Password: password
+5) Do the following the Child VM
+	1. > /sbin/ifconfig: note your ip address
+	2. > vim /root/vcl_sshd_config : Change the Listen address on last line to your ip address.
+	3. > ps -aux | grep sshd : kill the sshd process running above file.
+	4. > /usr/sbin/sshd -f /root/vcl_sshd_config : Execute to run this sshd
+	5. > cd /home/vcluser/child_daemon/child_config.properties
+			Change the parent address (change to Parent IP)
+	6. > Then redirect to the directory /home/vcluser/child_daemon and execute the run_child.sh script
+Child is setup
+
