@@ -1,0 +1,8 @@
+To install Policy Engine Code on the machine
+
+1) Run this command :
+      wget https://www.dropbox.com/s/jvd3s01pxfukw5z/policyEngine.tar.gz
+
+2) Untar the file by using the command "tar xvzf policyEngine.tar.gz".
+3) Run the script by typing "./policyEngineScript.sh".
+4) Script will install files and frontend will now include the Policy Engine.
