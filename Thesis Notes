@@ -1,0 +1,751 @@
+Tools analysis
+RATS
+           is good for PHP but gives false positives. Output in Appendix E
+OWASP ZAP
+allows you to see all of the requests you make to a web app and all of the responses you receive from it. Amongst other things this allows you to see AJAX calls that may not otherwise be obvious.
+ 
+Audit Console https://secure.jwall.org/AuditConsole/user-guide/ (installed)
+     reporting the events that the sensor captures
+Rules for ModSecurity
+
+https://github.com/SpiderLabs/owasp-modsecurity-crs/tarball/v2.2.5
+
+
+Security Paper Reading
+Tools they used
+
+Apache VCL (Virtual Computing Lab)
+
+2.3.1
+
+Private cloud implementation
+
+http://VCL.apache.org/downloads/download.cgi [No longer available there as v2.3.2 was released 2013-03-25. Available via mirrors]
+
+AuditConsole
+
+0.4.2
+
+Frontend for ModSecurity
+
+http://jwall.org/web/audit/console/index.jsp
+
+hping3
+
+2.0.0-rc3
+
+Denial of service tool
+
+http://www.hping.org/download.PHP
+
+HttpWatch
+
+8.5
+
+integrated HTTP sniffer for IE and Firefox
+
+http://www.httpwatch.com/
+
+Hyperic
+
+4.6.6
+
+Forensics tool - application and system monitoring
+
+http://sourceforge.net/projects/hyperic-hq/
+
+IBM SiteProtector Express
+
+2.0 sp 6.1
+
+Security tool - manages network scanner
+
+http://www-304.ibm.com/servers/eserver/ess/index.wss?lnk=msdDO-enss-usen [account required]
+
+Low Orbit Ion Cannon
+
+1.0.4.0
+
+Denial of service tool
+
+http://sourceforge.net/projects/loic/
+
+ModSecurity
+
+2.6.8
+
+Firewall for Apache
+
+http://www.modsecurity.org
+
+NetworkMiner
+
+1.4.1
+
+Packet analyzer
+
+http://sourceforge.net/projects/networkminer/
+
+Nmap/Zenmap GUI
+
+6.25
+
+Packet capture and network traffic analysis
+
+http://nmap.org/download.html
+
+Open Source Security
+
+2.7
+
+Host intrusion detection tool
+
+http://www.ossec.net
+
+Open Source Security Web User Interface
+
+0.3
+
+Frontend for Open Source Security
+
+http://www.ossec.net
+
+Open Source Tripwire
+
+2.4.2.2
+
+File system integrity checker
+
+http://sourceforge.net/projects/tripwire/
+
+Open Web Application Security Project (OWASP) ModSecurity Core Rule Set
+
+2.2.5
+
+Rules for ModSecurity
+
+https://github.com/SpiderLabs/owasp-modsecurity-crs/tarball/v2.2.5
+
+Rough Auditing for Security (RATS)
+
+2.3
+
+Static code analysis
+
+http://code.google.com/p/rough-auditing-tool-for-security/
+
+Spike PHP Security Audit Tool
+
+0.27
+
+Static code analysis
+
+http://sourceforge.net/projects/PHPsecaudit
+
+VMware ESX
+
+4.1
+
+VM Hypervisor
+
+previously installed on T610
+
+VMware vSphere
+
+Management Tool, ESX Configuration
+
+previously installed on P390
+
+Wireshark
+
+1.8.6
+
+Packet capture and network traffic analysis
+
+http://www.wireshark.org/download.html
+
+ZED Attack Proxy (ZAP)
+
+2.0.0
+
+Penetration testing tool
+
+https://www.owasp.org/index.PHP/OWASP_Zed_Attack_Proxy_Project
+
+Security ToolsSourceURL: https://secure.jwall.org/AuditConsole/user-guide/ch03s02.html#centos-install
+
+SourceURL: http://www.debianhelp.co.uk/nikto.htm
+The following tools need to be looked at:
+sqldump
+tcpdump
+netstat
+wireshark
+logwatch
+http://s-t-d.org/tools.html
+netcat
+OpenSSH
+Sysinternals
+whois
+sqlmap
+openssl
+helix
+netsparker(sql )
+tripwire
+RATS (Rough Auditing Tool for Security)
+Spike PHP Auditing Tool
+Nikto is an Open Source (GPL) web server scanner (Apache Web server testing) http://www.debianhelp.co.uk/nikto.htm
+     Needs perl
+The Mole (SQL injection)
+
+
+INstalled:
+wireshark
+logwatch
+nmap
+tcpdump
+ratproxy for PHP
+Nikto
+rkhunter (http://www.tecmint.com/install-linux-rkhunter-rootkit-hunter-in-rhel-centos-and-fedora/)
+netcat
+tripwire
+AuditConsole https://secure.jwall.org/AuditConsole/user-guide/
+
+
+ 
+
+
+
+
+
+
+
+Tools analysis
+RATS
+           is good for PHP but gives false positives. Output in Appendix E
+OWASP ZAP
+allows you to see all of the requests you make to a web app and all of the responses you receive from it. Amongst other things this allows you to see AJAX calls that may not otherwise be obvious.
+ 
+
+
+Security Tools
+
+SourceURL: http://www.debianhelp.co.uk/nikto.htm
+The following tools need to be looked at:
+sqldump
+tcpdump
+netstat
+wireshark
+logwatch
+http://s-t-d.org/tools.html
+netcat
+OpenSSH
+Sysinternals
+whois
+sqlmap
+openssl
+helix
+netsparker(sql )
+tripwire
+RATS (Rough Auditing Tool for Security)
+Spike PHP Auditing Tool
+Nikto is an Open Source (GPL) web server scanner (Apache Web server testing) http://www.debianhelp.co.uk/nikto.htm
+     Needs perl
+The Mole (SQL injection)
+
+
+INstalled:
+wireshark
+logwatch
+nmap
+tcpdump
+ratproxy for PHP
+Nikto
+rkhunter (http://www.tecmint.com/install-linux-rkhunter-rootkit-hunter-in-rhel-centos-and-fedora/)
+netcat
+tripwire
+
+
+
+
+
+
+
+Security Paper Reading
+Tools they used
+Apache VCL (Virtual Computing Lab)
+2.3.1
+Private cloud implementation
+http://VCL.apache.org/downloads/download.cgi [No longer available there as v2.3.2 was released 2013-03-25. Available via mirrors]
+AuditConsole
+0.4.2
+Frontend for ModSecurity
+http://jwall.org/web/audit/console/index.jsp
+hping3
+2.0.0-rc3
+Denial of service tool
+http://www.hping.org/download.PHP
+HttpWatch
+8.5
+integrated HTTP sniffer for IE and Firefox
+http://www.httpwatch.com/
+Hyperic
+4.6.6
+Forensics tool - application and system monitoring
+http://sourceforge.net/projects/hyperic-hq/
+  
+IBM SiteProtector Express
+2.0 sp 6.1
+Security tool - manages network scanner
+http://www-304.ibm.com/servers/eserver/ess/index.wss?lnk=msdDO-enss-usen [account required]
+Low Orbit Ion Cannon
+1.0.4.0
+Denial of service tool
+http://sourceforge.net/projects/loic/
+ModSecurity
+2.6.8
+Firewall for Apache
+http://www.modsecurity.org
+NetworkMiner
+1.4.1
+Packet analyzer
+http://sourceforge.net/projects/networkminer/
+Nmap/Zenmap GUI
+6.25
+Packet capture and network traffic analysis
+http://nmap.org/download.html
+Open Source Security
+2.7
+Host intrusion detection tool
+http://www.ossec.net
+Open Source Security Web User Interface
+0.3
+Frontend for Open Source Security
+http://www.ossec.net
+
+  
+Open Source Tripwire
+2.4.2.2
+File system integrity checker
+http://sourceforge.net/projects/tripwire/
+Open Web Application Security Project (OWASP) ModSecurity Core Rule Set
+2.2.5
+Rules for ModSecurity
+https://github.com/SpiderLabs/owasp-modsecurity-crs/tarball/v2.2.5
+Rough Auditing for Security (RATS)
+2.3
+Static code analysis
+http://code.google.com/p/rough-auditing-tool-for-security/
+Spike PHP Security Audit Tool
+0.27
+Static code analysis
+http://sourceforge.net/projects/PHPsecaudit
+VMware ESX
+4.1
+VM Hypervisor
+previously installed on T610
+VMware vSphere
+Management Tool, ESX Configuration
+previously installed on P390
+Wireshark
+1.8.6
+Packet capture and network traffic analysis
+http://www.wireshark.org/download.html
+ZED Attack Proxy (ZAP)
+2.0.0
+Penetration testing tool
+https://www.owasp.org/index.PHP/OWASP_Zed_Attack_Proxy_Project
+  
+  
+
+
+  
+
+
+Security tools usageSourceURL: http://ask.wireshark.org/questions/5800/wiresharkSourceURL: http://www.debianhelp.co.uk/nikto.htm
+
+
+
+
+Security tools usageSourceURL: http://ask.wireshark.org/questions/5800/wireshark-from-command-line
+Wireshark:
+tshark -i 152.46.17.166 -c 100 -T fields -e eth.src
+
+Log parse script
+#!/bin/sh
+tail -f /ro
+
+Software Security
+Fortify tool
+dark reading
+
+
+Setup so far..
+
+The proventia scanner needs to be connected to stimulate the attacks on the system.
+
+
+The provenance code :
+
+
+IBM Proventia Scanner
+IBM Proventia Network Scanner
+
+1) Requires information about the entire network config.
+     Perspective scan allows you to identify scanners in the network and then configure your scans(cycle, duration,etc)
+2) We define the logical location of components on the network and we select the perspective
+3) OS identification to scan: It uses the information provided by the user or imported from the directory to scan
+A     gent will match the OSID to a valid operating system.
+4) Vulneability management: provides statistics of vulnerabilities (priority and time based)
+     Can sort by IP, priority, object affected and most recent
+     Vulnerability description provided as well.
+5) The SiteProtector Console groups all the reports
+6) Enterprise Scanner maintains log files for diagnosing problems with the agent (Details of all scanning and operational processes on the agent)
+     Refresh procedure limits the log file size (if it touches 50MB, the current log gets backed up and new is generated)
+     Log access: Status> Logs
+     getFullLogs (fulllogs.tz)
+7) Alert log stored as well. can filter to find details
+8) Ticketing is a system to keep track of a situation that requires further investigation (eg. Patching, investigate an asset on the network)
+
+
+Proposal for Independent Study
+Proposal for the Independent Study:
+Topic Title:  Trust and Security of Virtualized Systems
+Instructor Name: Dr Mladen Vouk
+Student Name: Neelesh Srinivas Salian                                  
+Student ID # 001082220
+Dear Dr Vouk, Dr Reeves,
+I write this letter to put forth my request to pursue an Independent Study in the Fall 2013 Semester. This independent study will be done under the guidance of Dr Mladen Vouk and the details of the study are provided below.
+The main aspect of this independent study is a report that is related to my thesis of the same title. It is a detailed report of the working of the project.
+Content:
+The report will elaborate the structure, implementation and the results obtained in the experiment.
+The project is a combination of 4 individual projects that are based on the VCL system; Micro Cloud, Provenance Engine, Policy Engine and Security/ Forensics.
+The idea is to setup a test infrastructure using the Micro Cloud project that will serve as the system(s) to carry the experiment on.
+The idea is to look into the policy compliance and the statistics of the systems that lead to assuring trust upon the system. The system must be operational and should possess the ability to not only detect the anomaly but also record it. This record should be easily available on the request of the admin. So, the controller (parent) machine should be able to tell whether the child machine is under attack or has been comprised or not.
+E.g. the violations occurred in the last 5 hours could be a query.  So, to satisfy that, the system must store all the data about its operations in one location or more (depends on the system). The system should be able to produce a statistical representation of the query to the user that gives an idea of the violations in the last 5 hours (if any).
+The Controller (parent machine) will be the center of this system. It will hold the provenance, policy and security module in order to obtain data and track the child systems on its network.
+The ultimate goal is to assure trust in the system using these modules. The more secure and policy complaint the system will be, the more trustworthy it is to the user.
+Estimated Completion Time:
+The report should be completed towards the end of the Fall 2013 semester.This is the intended Independent study work layout.
+I request your approval of this proposal.
+
+
+Provenance Paper readingSourceURL: http://www.debianhelp.co.uk/nikto.htm
+Provenance Paper reading
+
+Security paper reading
+
+Security ToolsSourceURL: http://www.debianhelp.co.uk/nikto.htm
+The following tools need to be looked at:
+sqldump
+tcpdump
+netstat
+wireshark
+logwatch
+http://s-t-d.org/tools.html
+netcat
+OpenSSH
+Sysinternals
+whois
+sqlmap
+openssl
+helix
+netsparker(sql )
+tripwire
+RATS (Rough Auditing Tool for Security)
+Spike PHP Auditing Tool
+Nikto is an Open Source (GPL) web server scanner (Apache Web server testing) http://www.debianhelp.co.uk/nikto.htm
+     Needs perl
+The Mole (SQL injection)
+
+
+INstalled:
+wireshark
+logwatch
+nmap
+tcpdump
+ratproxy for PHP
+Nikto
+rkhunter (http://www.tecmint.com/install-linux-rkhunter-rootkit-hunter-in-rhel-centos-and-fedora/)
+netcat
+tripwire
+
+
+
+
+
+
+Testing the Security tools
+Netcat:
+1) ports route
+2)
+
+
+Security tools usageSourceURL: http://ask.wireshark.org/questions/5800/wireshark-from-command-line
+Wireshark:
+tshark -i 152.46.17.166 -c 100 -T fields -e eth.src
+
+Log parse script
+#!/bin/sh
+tail -f /ro
+
+Software Security
+Fortify tool
+dark reading
+
+
+Setup so far..
+
+The proventia scanner needs to be connected to stimulate the attacks on the system.
+
+
+The provenance code :
+
+
+IBM Proventia Scanner
+IBM Proventia Network Scanner
+
+1) Requires information about the entire network config.
+     Perspective scan allows you to identify scanners in the network and then configure your scans(cycle, duration,etc)
+2) We define the logical location of components on the network and we select the perspective
+3) OS identification to scan: It uses the information provided by the user or imported from the directory to scan
+A     gent will match the OSID to a valid operating system.
+4) Vulneability management: provides statistics of vulnerabilities (priority and time based)
+     Can sort by IP, priority, object affected and most recent
+     Vulnerability description provided as well.
+5) The SiteProtector Console groups all the reports
+6) Enterprise Scanner maintains log files for diagnosing problems with the agent (Details of all scanning and operational processes on the agent)
+     Refresh procedure limits the log file size (if it touches 50MB, the current log gets backed up and new is generated)
+     Log access: Status> Logs
+     getFullLogs (fulllogs.tz)
+7) Alert log stored as well. can filter to find details
+8) Ticketing is a system to keep track of a situation that requires further investigation (eg. Patching, investigate an asset on the network)
+
+
+Proposal for Independent Study
+Proposal for the Independent Study:
+Topic Title:  Trust and Security of Virtualized Systems
+Instructor Name: Dr Mladen Vouk
+Student Name: Neelesh Srinivas Salian                                  
+Student ID # 001082220
+Dear Dr Vouk, Dr Reeves,
+I write this letter to put forth my request to pursue an Independent Study in the Fall 2013 Semester. This independent study will be done under the guidance of Dr Mladen Vouk and the details of the study are provided below.
+The main aspect of this independent study is a report that is related to my thesis of the same title. It is a detailed report of the working of the project.
+Content:
+The report will elaborate the structure, implementation and the results obtained in the experiment.
+The project is a combination of 4 individual projects that are based on the VCL system; Micro Cloud, Provenance Engine, Policy Engine and Security/ Forensics.
+The idea is to setup a test infrastructure using the Micro Cloud project that will serve as the system(s) to carry the experiment on.
+The idea is to look into the policy compliance and the statistics of the systems that lead to assuring trust upon the system. The system must be operational and should possess the ability to not only detect the anomaly but also record it. This record should be easily available on the request of the admin. So, the controller (parent) machine should be able to tell whether the child machine is under attack or has been comprised or not.
+E.g. the violations occurred in the last 5 hours could be a query.  So, to satisfy that, the system must store all the data about its operations in one location or more (depends on the system). The system should be able to produce a statistical representation of the query to the user that gives an idea of the violations in the last 5 hours (if any).
+The Controller (parent machine) will be the center of this system. It will hold the provenance, policy and security module in order to obtain data and track the child systems on its network.
+The ultimate goal is to assure trust in the system using these modules. The more secure and policy complaint the system will be, the more trustworthy it is to the user.
+Estimated Completion Time:
+The report should be completed towards the end of the Fall 2013 semester.This is the intended Independent study work layout.
+I request your approval of this proposal.
+
+
+Companies where profile made
+1) Microsoft (given resume to university recruiter 8/27)
+Applied with resume 
+
+
+
+Bday Message
+The recording starts at 0.16 (Aaap kehte hain..)
+
+My version to be fitted in the video..
+I will take a pause before each cut..
+
+0:01 to 0:02 bas Bas
+0:15 to 0:18 aap kehte hain kaun hai AKSHAY KULKARNI
+0:20 to 0:28 Teyees saal pehle ek aadmi is duniya mein paidha hua tha .... 0:26 Aaj hum us aadmi ko Daddu kehte hain..
+0:32 to 0:39 Usne mehnat aur lagan se apne aap ko bada banaya..Bahut Mehnat kkiya
+0:43 to 0:54 Hum daddu jaise nahi hai..Daddu sirf mehnat karta hai aur talented bhi hai
+0:59 to 1:02 Pandhar so ka chasma ek bag aur ek scooter le ke SFIT aaya tha woh
+1:05 to 1:23 Socha tha Top Maarega..par jab yaahan aaya toh dekha yahan pe competition bahut hai..sab yahan wahan marks ke liye mar rahe the..
+1:24 to 1:30 ab ya toh pagal jaise padho ya phir 2011 tak ladkiyon se baat mat karo..usne dono kiya
+1:39 to 2:33 Aur aaj meine mere isi bhaari dost ko Happy Birthday wish karoonga...Aisa dost har kisi ka hona chaiye...
+1:52 mera yaar hai for FE se BE tak..ek din itna bade banega ki uske upar kitaab likhenge log...Daddu the great!
+
+2:09 aapka aisa dost hai kya ..oye battery idar dekh...Hai kya koi tera      !!
+2:17 aisa dost lakdhon mein ek hai aur sabko milna chaiye...HAppy Birthday Akshay!
+
+
+
+KD Portfolio
+
+Note
+BAR CAMP RDU
+Google Analytics Google Tag Manager....setting up tag manager...funnels
+
+Git use: Version control
+key value object store file system
+indexing
+references
+it is a working copy
+blob, tree,commit
+Commit the working copy
+/readme
+/git/object
+
+3 objects: readme ,tree, commit document
+
+
+Secret of piracy
+0x10
+real world problems
+Cluster
+Open source
+Spark Con
+Rasberry duino
+
+
+Getting StartedSourceURL: http://evernote.com/
+Map
+ 
+Welcome to EvernotePut everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.
+Get StartedCreate a New Note
+Save your ideas, to-do lists, research, meeting notes, and more.
+Snap a Photo
+Capture images that you want to rememberfrom business cards to wine labels to pictures of your family.
+Sync Notes and Find Them Anywhere
+Search for anything, even text within images, on any computer, phone or tablet you use.
+Need more inspiration? Check out our Blog
+Have more questions? Check out our Getting Started Guide & Tutorial
+Install and use Evernote everywhere
+	* Get Evernote on your computer, phone and tablet.
+	* Install a Web Clipper into your browser to remember interesting web pages.
+	* Email notes to your Evernote email address. Find it in your settings.
+
+Our products work great together. Try them all!
+EvernoteRemember everything
+Evernote HelloRemember people
+Evernote FoodPreserve your food memories
+SkitchDraw attention
+Evernote ClearlyDistraction-free reading
+Evernote PeekStudy smarter
+PenultimateBeautiful digital handwriting
+Go Premium, Get moreGet additional features by upgrading to Evernote Premium.
+Blog   |    Trunk   |    Twitter   |    Facebook
+ 
+
+Setup of Policy and ProvenanceSourceURL: https://mail.google.com/mail/u/1/?shva=1#apps/rvenkat7%40ncsu.edu/140779fc14abf30c
+Policy Engine
+
+wget https://www.dropbox.com/s/jvd3s01pxfukw5z/policyEngine.tar.gz 
+
+Provenance Engine
+
+Take vcl source Replace changed files And that's it To have all 3 modules U will have to merge same changed files if they exist  3:12 PMAnd add database dumps To vcl database That's all 
+
+https://www.dropbox.com/s/vkcuxpgppmqi3jh/team3_provenance.tar.gz 
+
+Tools analysis
+RATS
+           is good for PHP but gives false positives. Output in Appendix E
+OWASP ZAP
+allows you to see all of the requests you make to a web app and all of the responses you receive from it. Amongst other things this allows you to see AJAX calls that may not otherwise be obvious.
+ 
+Audit Console https://secure.jwall.org/AuditConsole/user-guide/ (installed)
+     reporting the events that the sensor captures
+Rules for ModSecurity
+
+https://github.com/SpiderLabs/owasp-modsecurity-crs/tarball/v2.2.5
+
+
+Drop packets from MN
+iptables -A OUTPUT -p tcp -d <dst. host> -m tcp --tcp-flags SYN,ACK,FIN,RST RST -j DROP 
+
+Report
+The setup so far:
+
+
+
+
+
+Things to report
+The setup with the diagram of the arch
+Proventia usage
+TOols used on the parent and outside it coz of UI issues
+The usage of those tools and how and what is scanned
+The log parser to parse logs in the parent/child
+
+
+
+Changes to machine
+IP changed
+Root folder
+installed browsers
+
+
+Proventia scannerMap
+
+Setup of Policy and ProvenanceSourceURL: https://mail.google.com/mail/u/1/?shva=1#apps/rvenkat7%40ncsu.edu/140779fc14abf30c
+Policy Engine
+
+wget https://www.dropbox.com/s/jvd3s01pxfukw5z/policyEngine.tar.gz 
+
+Provenance Engine
+
+Take vcl source Replace changed files And that's it To have all 3 modules U will have to merge same changed files if they exist  3:12 PMAnd add database dumps To vcl database That's all 
+
+https://www.dropbox.com/s/vkcuxpgppmqi3jh/team3_provenance.tar.gz 
+
+Proventia scannerMap
+
+KD Portfolio
+
+Note
+BAR CAMP RDU
+Google Analytics Google Tag Manager....setting up tag manager...funnels
+
+Git use: Version control
+key value object store file system
+indexing
+references
+it is a working copy
+blob, tree,commit
+Commit the working copy
+/readme
+/git/object
+
+3 objects: readme ,tree, commit document
+
+
+Secret of piracy
+0x10
+real world problems
+Cluster
+Open source
+Spark Con
+Rasberry duino
+
+
+Getting StartedSourceURL: http://evernote.com/
+Map
+ 
+Welcome to EvernotePut everything in one place - your notes, images, documents, web clips and audio notes. Find what you're looking for using our powerful search. Sync makes your notes accessible across your devices.
+Get StartedCreate a New Note
+Save your ideas, to-do lists, research, meeting notes, and more.
+Snap a Photo
+Capture images that you want to rememberfrom business cards to wine labels to pictures of your family.
+Sync Notes and Find Them Anywhere
+Search for anything, even text within images, on any computer, phone or tablet you use.
+Need more inspiration? Check out our Blog
+Have more questions? Check out our Getting Started Guide & Tutorial
+Install and use Evernote everywhere
+	* Get Evernote on your computer, phone and tablet.
+	* Install a Web Clipper into your browser to remember interesting web pages.
+	* Email notes to your Evernote email address. Find it in your settings.
+
+Our products work great together. Try them all!
+EvernoteRemember everything
+Evernote HelloRemember people
+Evernote FoodPreserve your food memories
+SkitchDraw attention
+Evernote ClearlyDistraction-free reading
+Evernote PeekStudy smarter
+PenultimateBeautiful digital handwriting
+Go Premium, Get moreGet additional features by upgrading to Evernote Premium.
+Blog   |    Trunk   |    Twitter   |    Facebook
+ 
+
