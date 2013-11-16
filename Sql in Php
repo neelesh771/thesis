@@ -1,0 +1,53 @@
+
+http://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php 
+Use prepared statements and parameterized queries. These are SQL statements that are sent to and parsed by the database server separately from any parameters. This way it is impossible for an attacker to inject malicious SQL.
+
+You basically have two options to achieve this:
+
+Using PDO:
+
+$stmt = $pdo->prepare('SELECT * FROM employees WHERE name = :name');
+
+$stmt->execute(array('name' => $name));
+
+foreach ($stmt as $row) {
+    // do something with $row
+}
+Using mysqli:
+
+$stmt = $dbConnection->prepare('SELECT * FROM employees WHERE name = ?');
+$stmt->bind_param('s', $name);
+
+$stmt->execute();
+
+$result = $stmt->get_result();
+while ($row = $result->fetch_assoc()) {
+    // do something with $row
+}
+PDO
+
+Note that when using PDO to access a MySQL database real prepared statements are not used by default. To fix this you have to disable the emulation of prepared statements. An example of creating a connection using PDO is:
+
+$dbConnection = new PDO('mysql:dbname=dbtest;host=127.0.0.1;charset=utf8', 'user', 'pass');
+
+$dbConnection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+$dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+In the above example the error mode isn't strictly necessary, but it is advised to add it. This way the script will not stop with a Fatal Error when something goes wrong. And gives the developer the chance to catch any error(s) which are thrown as PDOExceptions.
+
+What is mandatory however is the first setAttribute() line, which tells PDO to disable emulated prepared statements and use real prepared statements. This makes sure the statement and the values aren't parsed by PHP before sending it to the MySQL server (giving a possible attacker no chance to inject malicious SQL).
+
+Although you can set the charset in the options of the constructor it's important to note that 'older' versions of PHP (< 5.3.6) silently ignored the charset parameter in the DSN.
+
+Explanation
+
+What happens is that the SQL statement you pass to prepare is parsed and compiled by the database server. By specifying parameters (either a ? or a named parameter like :name in the example above) you tell the database engine where you want to filter on. Then when you call execute the prepared statement is combined with the parameter values you specify.
+
+The important thing here is that the parameter values are combined with the compiled statement, not a SQL string. SQL injection works by tricking the script into including malicious strings when it creates SQL to send to the database. So by sending the actual SQL separately from the parameters you limit the risk of ending up with something you didn't intend. Any parameters you send when using a prepared statement will just be treated as strings (although the database engine may do some optimization so parameters may end up as numbers too, of course). In the example above, if the $name variable contains 'Sarah'; DELETE * FROM employees the result would simply be a search for the string "'Sarah'; DELETE * FROM employees", and you will not end up with an empty table.
+
+Another benefit with using prepared statements is that if you execute the same statement many times in the same session it will only be parsed and compiled once, giving you some speed gains.
+
+Oh, and since you asked about how to do it for an insert, here's an example (using PDO):
+
+$preparedStatement = $db->prepare('INSERT INTO table (column) VALUES (:column)');
+
+$preparedStatement->execute(array('column' => $unsafeValue));
