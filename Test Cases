@@ -1,0 +1,15 @@
+Test Cases for top 25 vulnerabilities
+1) Sql injection
+2) Special Elements in OS Command Injection
+3) Buffer Copy without checking size of input
+4) Improper Neutralization of Input
+5) Missing Authentication
+6) Missing Authorization
+7) Use of Hard-Coded credentials
+8) Missing Encryption of Sensitiv Data
+9) Unrestricted upload of file with dangerous type
+10) Reliance on Untrusted inputs in a security decision
+11) Execution with Unnecessary Privileges
+12) Cross-Site Request forgery
+13) Improper Limitation of PathName to a restricted directory
+14) 
